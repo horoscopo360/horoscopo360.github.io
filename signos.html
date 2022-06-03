@@ -1,0 +1,83 @@
+<!DOCTYPE HTML >
+<html>
+	<head>
+		<title>Signo zodiacal</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+
+function algoritmo()
+{
+	let dia, mes;
+	dia = parseInt (document.formulario1.dia.value);
+	mes = parseInt (document.formulario1.mes.value);
+	if((dia>=21&&mes==3)||(dia<=20&&mes==4))
+		alert('Aries');
+	if((dia>=24&&mes==9)||(dia<=23&&mes==10))
+		alert('Libra');
+	if((dia>=21&&mes==4)||(dia<=21&&mes==5))
+		alert('Tauro');
+	if((dia>=24&&mes==10)||(dia<=22&&mes==11))
+		alert('Escorpio');
+	if((dia>=22&&mes==5)||(dia<=21&&mes==6))
+		alert('G\u00E9minis');
+	if((dia>=23&&mes==11)||(dia<=21&&mes==12))
+		alert('Sagitario');
+	if((dia>=21&&mes==6)||(dia<=23&&mes==7))
+		alert('C\u00E1ncer');
+	if((dia>=22&&mes==12)||(dia<=20&&mes==1))
+		alert('Capricornio');
+	if((dia>=24&&mes==7)||(dia<=23&&mes==8))
+		alert('Leo');
+	if((dia>=21&&mes==1)||(dia<=19&&mes==2))
+		alert('Acuario');
+	if((dia>=24&&mes==8)||(dia<=23&&mes==9))
+		alert('Virgo');
+	if((dia>=20&&mes==2)||(dia<=20&&mes==3))
+		alert('Piscis');
+}
+
+		</script>
+	</head>
+	<body background="horoscopo5.jpg" height="100%" width="100%">
+	
+	<font color="#FFFFFF" size="5px" face="garamond">
+	
+	
+		<form name="formulario1">
+			<table style="text-align: left; margin-left: auto; margin-right: auto;">
+				<tbody>
+					<tr>
+						<td>
+							<label for="dia">Ingresa el dia de nacimiento:</label>
+						</td>
+						<td>
+							<input name="dia" required="required" step="1" type="number" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="mes">Ingresa el mes de nacimiento:</label>
+						</td>
+						<td>
+							<input name="mes" required="required" step="1" type="number" />
+						</td>
+					</tr>
+					<tr align="center">
+						<td colspan="2" rowspan="1">
+							<input value="Calcular" type="button" onclick="algoritmo();" />
+							<input type="reset" />
+						</td>
+					</tr>			
+				</tbody>
+			</table>
+		</form>
+		</font>
+	</body>
+
+			<font color="#FFFFFF" size="10px" face="garamond">
+	 Los signos zodiacales son áreas de la esfera celeste que se definen de forma distinta a como 
+	 se definen las constelaciones del mismo nombre, de modo que un signo zodiacal dado y la constelación 
+	 de su mismo nombre cubren áreas distintas de la esfera celeste...
+	 </font>
+	 </P> 
+</html>
